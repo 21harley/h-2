@@ -5,7 +5,10 @@
  * 
  * output => [7,5,3,1]
  */
-let result = [];
+ let numeros =[7,5,3,1]
+ let result = [];
+ 
+ result=numeros.map(valor=>valor)
 
 
 //export result

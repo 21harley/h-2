@@ -17,8 +17,22 @@
  */
 let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
-let result = [];
+let aux={
+    1:"one",
+    3:"three",
+    5:"five",
+    foo : "f00",
+    bar : "Bar",
+    baz : "b@z",   
+    qux : "quX",
+    echo : "3ch0"
+}
+let result = ["h@ck",...numberArray,"h@ck",...stringArray,"h@ck"]; //1 y 2
 
+result=result.map((valor)=>{//3
+    return ((aux[valor])?aux[valor]:valor)
+})
 
+//console.log(result);
 //export result
 module.exports = result;

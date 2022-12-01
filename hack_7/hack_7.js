@@ -9,6 +9,9 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+result=arr.map(function(candena){
+    return candena[0].toUpperCase()+candena.slice(1);
+})
 
 //export result
 module.exports = result;

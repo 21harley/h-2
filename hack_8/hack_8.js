@@ -9,8 +9,19 @@
  * output => ["b@r","b@z","QUX"]   
  */
 let arr = ["foo","bar","baz","qux","echo"];
+let aux=["bar","baz","qux"];
 let result = [];
 
+result=arr.filter(function(cadena){
+  return aux.includes(cadena);  
+})
+
+result= result.map(function(cadena){
+  return cadena.includes('a')?cadena.replace('a','@'):cadena;
+})
+
+let ulti=result.length-1;
+result[ulti]=result[ulti].toUpperCase();
 
 //export result
 module.exports = result;
